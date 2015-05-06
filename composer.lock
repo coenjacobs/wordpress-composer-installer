@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "28563e1383e62ad5c30c18f7e1789a8c",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "4d8b37190836a22028c4e4d2c0538f1ed98ee7df"
+                "reference": "6c63fe9f22779a36f672c3f831c1450bf0a3a143"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/4d8b37190836a22028c4e4d2c0538f1ed98ee7df",
-                "reference": "4d8b37190836a22028c4e4d2c0538f1ed98ee7df",
+                "url": "https://api.github.com/repos/composer/composer/zipball/6c63fe9f22779a36f672c3f831c1450bf0a3a143",
+                "reference": "6c63fe9f22779a36f672c3f831c1450bf0a3a143",
                 "shasum": ""
             },
             "require": {
@@ -75,7 +75,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2015-05-05 20:30:10"
+            "time": "2015-05-06 13:24:06"
         },
         {
             "name": "justinrainbow/json-schema",

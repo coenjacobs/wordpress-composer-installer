@@ -22,11 +22,10 @@ function wpci_execute_composer_install() {
 	require( 'vendor/autoload.php' );
 
 	putenv('COMPOSER_HOME=' . __DIR__ . '/vendor/bin/composer'); // know where to run composer from
-	putenv('COMPOSER_VENDOR_DIR=' . trailingslashit( WP_CONTENT_DIR ) . 'vendor'); // target dir for vendor folder
 
 	$input = new Symfony\Component\Console\Input\ArrayInput( array(
 		'command'  => 'install',
-		'-d'       => trailingslashit( WP_PLUGIN_DIR ) . dirname( $_GET['plugin'] ),
+		'-d'       => trailingslashit( WP_CONTENT_DIR ),
 		'--no-dev' => true,
 	) );
 
@@ -39,7 +38,9 @@ function wpci_execute_composer_install() {
 add_filter( 'plugin_action_links', 'wpci_plugin_action_links', 10, 4 );
 
 function wpci_plugin_action_links( $actions, $plugin_file, $plugin_data, $context ) {
-	$composer_link = wp_nonce_url( 'plugins.php?action=composer_install&amp;plugin='.$plugin_file, 'composer_install_plugin' );
-	$actions['composer'] = '<a href="'.$composer_link.'">Composer install</a>';
+	if ( strstr( $plugin_file, 'wordpress-composer-installer.php' ) ) {
+		$composer_link       = wp_nonce_url( 'plugins.php?action=composer_install', 'composer_install_plugin' );
+		$actions['composer'] = '<a href="' . $composer_link . '">Composer install</a>';
+	}
 	return $actions;
 }
