@@ -1,0 +1,12 @@
+{
+  "name": "coenjacobs/wordpress-composer-installer",
+  "authors": [
+    {
+      "name": "Coen Jacobs",
+      "email": "coenjacobs@gmail.com"
+    }
+  ],
+  "require": {
+    "composer/composer": "dev-master"
+  }
+}
