@@ -28,6 +28,7 @@ function wpci_execute_composer_install() {
 		'command'  => 'install',
 		'-d'       => dirname( __FILE__ ),
 		'--no-dev' => true,
+		'--prefer-dist' => true,
 	) );
 
 	$output = null; //new Symfony\Component\Console\Output\StreamOutput(fopen('php://output','w'));
