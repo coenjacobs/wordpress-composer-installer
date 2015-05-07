@@ -21,6 +21,7 @@ function wpci_admin_init() {
 function wpci_execute_composer_install() {
 	require( 'vendor/autoload.php' );
 
+	putenv('COMPOSER=plugins-composer.json');
 	putenv('COMPOSER_VENDOR_DIR=' . trailingslashit( WP_CONTENT_DIR ) . 'vendor');
 
 	$input = new Symfony\Component\Console\Input\ArrayInput( array(
