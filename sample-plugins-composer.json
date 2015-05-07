@@ -1,0 +1,10 @@
+{
+  "extra": {
+    "merge-plugin": {
+      "include": [
+        "../plugin-1/composer.json",
+        "../plugin-2/composer.json"
+      ]
+    }
+  }
+}
