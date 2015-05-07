@@ -21,11 +21,9 @@ function wpci_admin_init() {
 function wpci_execute_composer_install() {
 	require( 'vendor/autoload.php' );
 
-	putenv('COMPOSER_HOME=' . __DIR__ . '/vendor/bin/composer'); // know where to run composer from
-
 	$input = new Symfony\Component\Console\Input\ArrayInput( array(
 		'command'  => 'install',
-		'-d'       => trailingslashit( WP_CONTENT_DIR ),
+		'-d'       => dirname( __FILE__ ),
 		'--no-dev' => true,
 	) );
 

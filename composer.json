@@ -7,6 +7,14 @@
     }
   ],
   "require": {
-    "composer/composer": "dev-master"
+    "composer/composer": "dev-master",
+    "wikimedia/composer-merge-plugin": "dev-master"
+  },
+  "extra": {
+    "merge-plugin": {
+      "include": [
+        "plugins-composer.json"
+      ]
+    }
   }
 }
