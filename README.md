@@ -7,7 +7,7 @@
 3. Copy the `sample-plugins-composer.json` file and rename it to `plugins-composer.json`. Add paths to the `composer.json` files you want to install the dependencies of. (This step will be automated in [#3](https://github.com/coenjacobs/wordpress-composer-installer/issues/3)).
 4. Click on the `Composer install` plugin action link in the Plugins screen. This will install the dependencies required for merging the `composer.json` files.
 5. Delete the now generated `plugins-composer.lock` file (This step will be automated in [#2](https://github.com/coenjacobs/wordpress-composer-installer/issues/2)).
-6. Click on the `Composer install` plugin action link again, in the Plugins screen. This will install the dependencies of the plugins specified in the `plugins-composer.lock` file.
+6. Click on the `Composer install` plugin action link again, in the Plugins screen. This will install the dependencies of the plugins specified in the `plugins-composer.json` file.
 7. The dependencies will now be installed in the `wp-content/vendor/` directory. You can include the autoloader at `wp-content/vendor/autoload.php`.
 
 ## Important bits during development
