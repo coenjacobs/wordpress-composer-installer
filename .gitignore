@@ -1,5 +1,6 @@
 .DS_Store
 /composer.lock
 /plugins-composer.json
+/plugins-composer.lock
 /.idea/
 /vendor/

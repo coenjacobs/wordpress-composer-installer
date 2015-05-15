@@ -1,7 +1,11 @@
 {
+  "require": {
+    "wikimedia/composer-merge-plugin": "dev-master"
+  },
   "extra": {
     "merge-plugin": {
       "include": [
+        "composer.json",
         "../plugin-1/composer.json",
         "../plugin-2/composer.json"
       ]
