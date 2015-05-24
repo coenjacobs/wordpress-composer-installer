@@ -14,3 +14,4 @@
 - Process is really expensive and takes a long time. Probably need to put some kind of wizard, progress bar or whatever and make sure it doesn't time out.
 - Of course the plugin needs to be structured properly, this is only a proof of concept for now.
 - It needs to hook in on plugin activate/deactivate and do its magic there. Manual option to override.
+- Ryan McCue has provided a ton of great UI/UX things to look after in code like this: "[How I Would Solve Plugin Dependencies](http://journal.rmccue.io/322/plugin-dependencies/)"
