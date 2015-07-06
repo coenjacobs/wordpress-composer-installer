@@ -7,6 +7,7 @@
     }
   ],
   "require": {
+    "coenjacobs/merge-composer-generator": "dev-master",
     "composer/composer": "dev-master",
     "wikimedia/composer-merge-plugin": "dev-master"
   }
